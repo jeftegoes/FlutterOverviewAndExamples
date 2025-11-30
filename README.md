@@ -1,54 +1,66 @@
-- [1. What Is Flutter?](#1-what-is-flutter)
-- [2. One Codebase, Multiple Apps](#2-one-codebase-multiple-apps)
-- [3. From Flutter Code To Platform Code](#3-from-flutter-code-to-platform-code)
-- [4. Flutter Is Not A Programming Language!](#4-flutter-is-not-a-programming-language)
-- [5. Target Platforms](#5-target-platforms)
-- [6. Flutter Setup](#6-flutter-setup)
-  - [6.1. Windows](#61-windows)
-- [7. Target Platform Tools \& Devices Setup](#7-target-platform-tools--devices-setup)
-- [8. About Material Design](#8-about-material-design)
-- [9. Dart \& Flutter Code Is Compiled](#9-dart--flutter-code-is-compiled)
-- [10. Two Categories of "Words"](#10-two-categories-of-words)
-- [11. How Flutter Apps Become Active](#11-how-flutter-apps-become-active)
-- [12. It's all about Widgets!](#12-its-all-about-widgets)
-  - [12.1. Flutter UIs Are Built With Widgets](#121-flutter-uis-are-built-with-widgets)
-  - [12.2. It's a Widget Tree!](#122-its-a-widget-tree)
-- [13. Functions: "Code on Demand"](#13-functions-code-on-demand)
-- [14. Functions \& Parameters](#14-functions--parameters)
-  - [14.1. Named vs Positional Arguments](#141-named-vs-positional-arguments)
-  - [14.2. Understanding "const"](#142-understanding-const)
-- [15. Scaffold Class](#15-scaffold-class)
-- [16. Understanding Types](#16-understanding-types)
-  - [16.1. Some Core Types](#161-some-core-types)
-  - [16.2. Widgets Are Objects](#162-widgets-are-objects)
-  - [16.3. Understanding Generic Types](#163-understanding-generic-types)
-- [17. Understanding Classes](#17-understanding-classes)
-- [18. Objects = Data Structures](#18-objects--data-structures)
-- [19. Objects Are Constructed From Classes](#19-objects-are-constructed-from-classes)
-- [20. Understanding Variables](#20-understanding-variables)
-- [21. "final" vs "const" vs "var"](#21-final-vs-const-vs-var)
-- [22. Building Custom Widgets](#22-building-custom-widgets)
-- [23. Widgets Are Complex Objects](#23-widgets-are-complex-objects)
-- [24. Column \& Row](#24-column--row)
-- [25. Cross-Widget State Management](#25-cross-widget-state-management)
-  - [25.1. The Problem](#251-the-problem)
-  - [25.2. How Riverpod Works](#252-how-riverpod-works)
-- [26. Explicit vs Implicit Animations](#26-explicit-vs-implicit-animations)
-- [27. Why A Backend?](#27-why-a-backend)
-- [28. HTTP?](#28-http)
-- [29. Different HTTP Methods](#29-different-http-methods)
-- [30. Commands](#30-commands)
-- [31. Publishing iOS \& Android Apps](#31-publishing-ios--android-apps)
-- [32. Tips](#32-tips)
+- [1. Introduction](#1-introduction)
+  - [1.1. What Is Flutter?](#11-what-is-flutter)
+  - [1.2. One Codebase, Multiple Apps](#12-one-codebase-multiple-apps)
+  - [1.3. From Flutter Code To Platform Code](#13-from-flutter-code-to-platform-code)
+  - [1.4. Flutter Is Not A Programming Language!](#14-flutter-is-not-a-programming-language)
+  - [1.5. Target Platforms](#15-target-platforms)
+  - [1.6. Flutter Setup](#16-flutter-setup)
+    - [1.6.1. Windows](#161-windows)
+  - [1.7. Target Platform Tools \& Devices Setup](#17-target-platform-tools--devices-setup)
+  - [1.8. About Material Design](#18-about-material-design)
+  - [1.9. Dart \& Flutter Code Is Compiled](#19-dart--flutter-code-is-compiled)
+  - [1.10. Two Categories of "Words"](#110-two-categories-of-words)
+  - [1.11. How Flutter Apps Become Active](#111-how-flutter-apps-become-active)
+  - [1.12. It's all about Widgets!](#112-its-all-about-widgets)
+    - [1.12.1. Flutter UIs Are Built With Widgets](#1121-flutter-uis-are-built-with-widgets)
+    - [1.12.2. It's a Widget Tree!](#1122-its-a-widget-tree)
+  - [1.13. Functions: "Code on Demand"](#113-functions-code-on-demand)
+  - [1.14. Functions \& Parameters](#114-functions--parameters)
+    - [1.14.1. Named vs Positional Arguments](#1141-named-vs-positional-arguments)
+    - [1.14.2. Understanding "const"](#1142-understanding-const)
+  - [1.15. Scaffold Class](#115-scaffold-class)
+  - [1.16. Understanding Types](#116-understanding-types)
+    - [1.16.1. Some Core Types](#1161-some-core-types)
+    - [1.16.2. Widgets Are Objects](#1162-widgets-are-objects)
+    - [1.16.3. Understanding Generic Types](#1163-understanding-generic-types)
+  - [1.17. Understanding Classes](#117-understanding-classes)
+  - [1.18. Objects = Data Structures](#118-objects--data-structures)
+  - [1.19. Objects Are Constructed From Classes](#119-objects-are-constructed-from-classes)
+  - [1.20. Understanding Variables](#120-understanding-variables)
+  - [1.21. "final" vs "const" vs "var"](#121-final-vs-const-vs-var)
+  - [1.22. Building Custom Widgets](#122-building-custom-widgets)
+  - [1.23. Widgets Are Complex Objects](#123-widgets-are-complex-objects)
+  - [1.24. Column \& Row](#124-column--row)
+  - [1.25. Functions As Values](#125-functions-as-values)
+  - [1.26. Stateless vs Stateful Widgets](#126-stateless-vs-stateful-widgets)
+  - [1.27. Summary](#127-summary)
+- [2. Advanced Fundamentals](#2-advanced-fundamentals)
+- [3. Navigation \& Multi-Screen Apps](#3-navigation--multi-screen-apps)
+  - [3.1. A Stack of Screens](#31-a-stack-of-screens)
+  - [3.2. A Stack of Screens](#32-a-stack-of-screens)
+  - [3.3. The Stack Widget](#33-the-stack-widget)
+- [4. Cross-Widget State Management](#4-cross-widget-state-management)
+  - [4.1. The Problem](#41-the-problem)
+  - [4.2. How Riverpod Works](#42-how-riverpod-works)
+- [5. Explicit vs Implicit Animations](#5-explicit-vs-implicit-animations)
+- [6. Connecting a Backend](#6-connecting-a-backend)
+  - [6.1. Why A Backend?](#61-why-a-backend)
+  - [6.2. HTTP?](#62-http)
+  - [6.3. Different HTTP Methods](#63-different-http-methods)
+- [7. Commands](#7-commands)
+- [8. Publishing iOS \& Android Apps](#8-publishing-ios--android-apps)
+- [9. Tips](#9-tips)
 
-# 1. What Is Flutter?
+# 1. Introduction
+
+## 1.1. What Is Flutter?
 
 - UI Framework
   - Code packages & utility functions for writing cross platform app code.
 - Collection of Tools CLI & software that helps with developing, testing & building cross-platform apps.
 - Flutter allows we to build multi-platform apps based on one single codebase and programming language.
 
-# 2. One Codebase, Multiple Apps
+## 1.2. One Codebase, Multiple Apps
 
 - **Single Codebase**
   - Android
@@ -58,14 +70,14 @@
   - Linux
   - Web
 
-# 3. From Flutter Code To Platform Code
+## 1.3. From Flutter Code To Platform Code
 
 - Single Codebase -- Flutter translates that code to platform-specific machine code.
 - Machine Code
   - Android
   - iOS
 
-# 4. Flutter Is Not A Programming Language!
+## 1.4. Flutter Is Not A Programming Language!
 
 - It's a **framework** for building user interfaces with **Dart**.
 - **Framework**
@@ -74,7 +86,7 @@
   - A programming language developed by Google.
   - **Main usage:** Flutter app development.
 
-# 5. Target Platforms
+## 1.5. Target Platforms
 
 - Platforms supported by Flutter
   - **Mobile Apps**
@@ -90,7 +102,7 @@
 - Whilst we can write the code for all platforms on the same machine, we can only test & run iOS & macOS apps on macOS machines, Windows apps on Windows machines and Linux apps on Linux machines!
 - Android and web apps can be built on all operating systems.
 
-# 6. Flutter Setup
+## 1.6. Flutter Setup
 
 - **Flutter SDK**
   - For managing Flutter projects.
@@ -107,24 +119,24 @@
   - **iOS**
     - Preview Flutter apps on virtual iOS devices.
 
-## 6.1. Windows
+### 1.6.1. Windows
 
 - Git
 - Vscode
 - Flutter SDK
 - Android Studio
 
-# 7. Target Platform Tools & Devices Setup
+## 1.7. Target Platform Tools & Devices Setup
 
 - TODO: DIAGRAM
 
-# 8. About Material Design
+## 1.8. About Material Design
 
 - **Google's flexible design system**
   - A set of suggestions, rules & guidelines that help us build beautiful user interfaces.
   - Highly customizable and extendable.
 
-# 9. Dart & Flutter Code Is Compiled
+## 1.9. Dart & Flutter Code Is Compiled
 
 1. Parsed from top to bottom.
 
@@ -139,7 +151,7 @@ void main() {
    `<native iOS or Android machine code>`
    TODO: DIAGRAM
 
-# 10. Two Categories of "Words"
+## 1.10. Two Categories of "Words"
 
 - **Keywords**
   - Built into the programming language.
@@ -148,7 +160,7 @@ void main() {
   - Defined by developers
   - Used for identifying "things" in code.
 
-# 11. How Flutter Apps Become Active
+## 1.11. How Flutter Apps Become Active
 
 1. `main()` function gets executed automatically.
    1. By Dart, when executing the compiled app on the target device.
@@ -157,15 +169,15 @@ void main() {
 3. Pass the to-be-displayed "widget tree" to `runApp()`.
    1. A "widget tree" is a combination of (nested) Flutter widgets that build the overall user interface.
 
-# 12. It's all about Widgets!
+## 1.12. It's all about Widgets!
 
 - Flutter UIs are created by combining & nesting Widgets.
 - Flutter provides many built-in Widgets e.g., Buttons, form inputs, layout widgets, ...
 - We can also build our own Widgets Based on the built-in Widgets.
 
-## 12.1. Flutter UIs Are Built With Widgets
+### 1.12.1. Flutter UIs Are Built With Widgets
 
-- When using Flutter, you build your user interface with code.
+- When using Flutter, we build our user interface with code.
 - A combination of widgets.
 - Widgets are nested into each other ->
 
@@ -182,11 +194,11 @@ TODO: DIAGRAM
 - Built-in Center widget centers its content horizontally + vertically.
 - Built-in Text widget displays some text on the screen.
 
-## 12.2. It's a Widget Tree!
+### 1.12.2. It's a Widget Tree!
 
 TODO: DIAGRAM
 
-# 13. Functions: "Code on Demand"
+## 1.13. Functions: "Code on Demand"
 
 - **Function Definition**
 
@@ -207,9 +219,9 @@ TODO: DIAGRAM
     }
   ```
 
-- Functions can be used ("called") in your code **as often as needed**.
+- Functions can be used ("called") in our code **as often as needed**.
 
-# 14. Functions & Parameters
+## 1.14. Functions & Parameters
 
 - Functions may take input values — so called "Parameters" or "Arguments".
 - **No Parameters**
@@ -221,7 +233,7 @@ TODO: DIAGRAM
     - Multiple parameters are separated by commas.
 - (these are just examples — functions can accept as many arguments / parameters as needed).
 
-## 14.1. Named vs Positional Arguments
+### 1.14.1. Named vs Positional Arguments
 
 - Functions may receive input values as "named" or "positional" arguments.
 - **Named Arguments**
@@ -231,24 +243,24 @@ TODO: DIAGRAM
   - `add(1, 5)`
     - Argument values are mapped by position (first expected parameter receives first argument etc.)
 
-## 14.2. Understanding "const"
+### 1.14.2. Understanding "const"
 
 - `const` helps Dart optimize runtime performance.
 - `const Text('Hello World!')`
   - Defined & used for the first time in the app.
   - Defined & used for the second time in the app
 
-# 15. Scaffold Class
+## 1.15. Scaffold Class
 
 - https://api.flutter.dev/flutter/material/Scaffold-class.html
 
-# 16. Understanding Types
+## 1.16. Understanding Types
 
 - Dart is a type-safe language
 - All values are of certain Types
 - TODO: DIAGRAM
 
-## 16.1. Some Core Types
+### 1.16.1. Some Core Types
 
 | int    | Integer numbers               | Numbers without decimal places             | 29, -15          |
 | ------ | ----------------------------- | ------------------------------------------ | ---------------- |
@@ -258,12 +270,12 @@ TODO: DIAGRAM
 | bool   | Boolean values                | true or false                              | true, false      |
 | Object | Any kind of object            | The base type of all values                | 'Hi', 29, false  |
 
-## 16.2. Widgets Are Objects
+### 1.16.2. Widgets Are Objects
 
 - Widgets = Objects = Data Structures in Memory
   - **Objects:** Core Dart Concept!
 
-## 16.3. Understanding Generic Types
+### 1.16.3. Understanding Generic Types
 
 - Generic Types are "flexible types" that "work together" with other Types.
 - **E.g., list of hobbies**
@@ -273,7 +285,7 @@ TODO: DIAGRAM
   - [5.91, 3.87. 1.21]
     - `List<double>`
 
-# 17. Understanding Classes
+## 1.17. Understanding Classes
 
 - Dart is an object-oriented language.
   - Every value is an object.
@@ -287,7 +299,7 @@ TODO: DIAGRAM
   - e.g., Widgets, Gradient Config Object.
     - Created based on blueprints: Classes.
 
-# 18. Objects = Data Structures
+## 1.18. Objects = Data Structures
 
 - Objects are data structures stored in (computer) memory.
 - **Data**
@@ -296,20 +308,20 @@ TODO: DIAGRAM
   - Methods.
 - Objects help with organizing 15. data & separating logic.
 
-# 19. Objects Are Constructed From Classes
+## 1.19. Objects Are Constructed From Classes
 
 - Class -> Object
 - Object is created by calling the "constructor function" of a class.
 - Constructor Functions
   - Creates the object, performs (optional) initialization work, stores it in memory etc.
 
-# 20. Understanding Variables
+## 1.20. Understanding Variables
 
 - Variables are "Data Containers".
 - `var greetingText` = "Hello World"
   - Variable declaration -> (Value) Assignment Operator -> Value (Text / String).
 
-# 21. "final" vs "const" vs "var"
+## 1.21. "final" vs "const" vs "var"
 
 - `var`
   - Creates a new variable that will be re-assigned at some point.
@@ -323,7 +335,7 @@ TODO: DIAGRAM
   - Will (and can) never be re-assigned & value is "hardcoded" (fixed) at compile-time.
   - Can't be used if some code must be executed in order to derive the value.
 
-# 22. Building Custom Widgets
+## 1.22. Building Custom Widgets
 
 - **Main App**
   ```dart
@@ -345,7 +357,7 @@ TODO: DIAGRAM
   );
   ```
 
-# 23. Widgets Are Complex Objects
+## 1.23. Widgets Are Complex Objects
 
 - **Used in code**
   - `Text('Hi there!')`
@@ -353,9 +365,9 @@ TODO: DIAGRAM
   - **Object**
     - Contains useful render information for Flutter
 
-# 24. Column & Row
+## 1.24. Column & Row
 
-- Column() & Row() can be used to place **multiple child widgets next to each other**.
+- `Column()` & `Row()` can be used to place **multiple child widgets next to each other**.
 - `Column()`
   - **Main Axis:** Vertical Axis
   - **Cross Axis:** Horizontal Axis
@@ -365,17 +377,112 @@ TODO: DIAGRAM
   - **Cross Axis:** Vertical Axis
   - By default, occupies the entire available width but only the height required by its content (children).
 
-# 25. Cross-Widget State Management
+TODO: TABLE AND DIAGRAM
 
-## 25.1. The Problem
+## 1.25. Functions As Values
+
+- In Dart, functions are also just values / objects!
+- **Defining a Function**
+  - `void start() { ... }`
+    - Code inside the function does not yet execute — instead it's defined for execution in the future.
+- **Calling a Function**
+  - `start();`
+    - Code defined inside the function is executed.
+- **Using a Function as a Value**
+  - `TextButton(onPressed: start)`
+    - Code inside the function is not yet executed — instead the function may be called from inside the receiving object (e.g., widget).
+
+## 1.26. Stateless vs Stateful Widgets
+
+- **Stateless Widgets**
+  - Don't manage any internal data.
+  - Only update the screen if parent Widgets were updated ("re-rendered").
+  - **Should be our default: Use as often as possible.**
+- **Stateful Widgets**
+  - Do manage internal data ("state").
+  - When state changes, the Widget is re-rendered & the UI is updated.
+  - Use whenever when we have changing data that should cause UI updates.
+
+## 1.27. Summary
+
+- **Starting Flutter Apps**
+  - main.dart -> `main()` -> `runApp()`.
+- **Widgets, Widgets, Widgets**
+  - Flutter UIs are built by combining widgets.
+  - Widgets are nested into each other ("widget tree").
+- **Custom Widgets**
+  - `StatelessWidget` doesn't change internally.
+  - `StatefulWidget` updates the UI upon state changes.
+- **Core Dart Features**
+  - Types, functions, variables, classes, objects, ...
+  - Let the code editor (e.g., VS Code) help you!
+- **Configuring Widgets**
+  - Many (built-in) widgets offer (named) configuration arguments.
+  - Typically, configuration objects are used.
+
+# 2. Advanced Fundamentals
+
+-
+
+# 3. Navigation & Multi-Screen Apps
+
+- Allowing Users To Navigate Between Screens
+- Managing Screen Stacks
+- Working with Tab Bars
+- Using Side Drawers
+
+## 3.1. A Stack of Screens
+
+- Screen Stack
+- Navigator.push()
+- Pushing MealsScreen
+- CategoriesScreen
+- MealsScreen
+- Currently visible screen
+- The top-most screen (in the stack of
+- screens) is the one visible to the user
+- The other screen widgets (on lower
+- layers) are not or only partially visible
+
+## 3.2. A Stack of Screens
+
+- Screen Stack
+- Navigator.pop()
+- Remove MealsScreen
+- MealsScreen
+- CategoriesScreen
+- Currently visible screen
+- The top-most screen (in the stack of
+- screens) is the one visible to the user
+
+## 3.3. The Stack Widget
+
+- Column
+- Widget A
+- Widget B
+- Stack
+- Widget A
+- Widget B
+- Widget C
+- Multiple widgets are positioned next
+- to each other along the Y-Axis
+- e.g., a Text() above a TextField()
+- Widget C
+- Multiple widgets are positioned on top
+- of each other along the Z-Axis
+- e.g., a Text() on top of an Image()
+
+# 4. Cross-Widget State Management
+
+## 4.1. The Problem
 
 TODO: DIAGRAM
 
-## 25.2. How Riverpod Works
+## 4.2. How Riverpod Works
 
 TODO: DIAGRAM
 
-# 26. Explicit vs Implicit Animations
+# 5. Explicit vs Implicit Animations
 
 - **Explicit**
   - You control the entire animation.
@@ -386,7 +493,9 @@ TODO: DIAGRAM
   - Less control and therefore less complexity.
   - Use pre-built animation widgets as often as possible!
 
-# 27. Why A Backend?
+# 6. Connecting a Backend
+
+## 6.1. Why A Backend?
 
 - **Flutter App**
   - Runs on the user's device / mobile phone.
@@ -397,11 +506,11 @@ TODO: DIAGRAM
   - Data is stored in a central, remote place (e.g., SQL database).
   - App users from all over the world can interact with same data.
 
-# 28. HTTP?
+## 6.2. HTTP?
 
 - TODO: DIAGRAM
 
-# 29. Different HTTP Methods
+## 6.3. Different HTTP Methods
 
 - `GET`
   - Typically used to fetch data.
@@ -415,23 +524,24 @@ TODO: DIAGRAM
   - Typically used to delete data.
 - **But:** It's the server that controls what happens when a request arrives!
 
-# 30. Commands
+# 7. Commands
 
 - Create a new flutter project.
   - `flutter create first_app`
 - Run flutter project.
-  - `flutter run`
+  - `flutter run` # Default mobile.
+  - `flutter run -d chrome`
 - Clean cache
   - `flutter clean`
 - `flutter doctor`
 - `dart fix --apply`
 
-# 31. Publishing iOS & Android Apps
+# 8. Publishing iOS & Android Apps
 
 - Publish an Android App: https://docs.flutter.dev/deployment/android
 - Publish an iOS App: https://docs.flutter.dev/deployment/ios
 
-# 32. Tips
+# 9. Tips
 
 - To maintain , (comma).
   ````yaml

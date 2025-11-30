@@ -422,7 +422,7 @@ TODO: TABLE AND DIAGRAM
 
 # 2. Advanced Fundamentals
 
--
+- 
 
 # 3. Navigation & Multi-Screen Apps
 

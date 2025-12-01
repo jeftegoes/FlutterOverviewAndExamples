@@ -379,6 +379,8 @@ TODO: DIAGRAM
 
 TODO: TABLE AND DIAGRAM
 
+https://themobilecoder.com/axis-alignment-columns-rows-flutter/
+
 ## 1.25. Functions As Values
 
 - In Dart, functions are also just values / objects!
@@ -422,7 +424,7 @@ TODO: TABLE AND DIAGRAM
 
 # 2. Advanced Fundamentals
 
-- 
+
 
 # 3. Navigation & Multi-Screen Apps
 
@@ -543,7 +545,7 @@ TODO: DIAGRAM
 
 # 9. Tips
 
-- To maintain , (comma).
+- To maintain , (comma) change analysis_options.yaml file.
   ````yaml
   formatter:
     trailing_commas: preserve```

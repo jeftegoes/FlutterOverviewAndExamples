@@ -50,6 +50,8 @@
 - [7. Commands](#7-commands)
 - [8. Publishing iOS \& Android Apps](#8-publishing-ios--android-apps)
 - [9. Tips](#9-tips)
+- [10. Firebase configuration](#10-firebase-configuration)
+  - [10.1. Windows](#101-windows)
 
 # 1. Introduction
 
@@ -550,3 +552,21 @@ TODO: DIAGRAM
   formatter:
     trailing_commas: preserve```
   ````
+
+# 10. Firebase configuration
+
+## 10.1. Windows
+
+1. https://firebase.google.com/docs/cli#setup_update_cli
+   1. Install node https://nodejs.org/pt/download
+   2. `npm install -g firebase-tools`
+   3. `firebase login`
+   4. `dart pub global activate flutterfire_cli`.
+   5. Configure environment variables.
+2. Configure your apps to use Firebase.
+   1. `flutterfire configure` on project.
+3. Initialize Firebase in your app.
+   1. Enable Developer Mode in your system settings. Run `start ms-settings:developers`.
+   2. `flutter pub add firebase_core`.
+   2. `flutter pub add firebase_auth`.
+   3. start ms-settings:developers.

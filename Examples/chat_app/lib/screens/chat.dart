@@ -1,19 +1,36 @@
+import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
 
 class ChatScreen extends StatefulWidget {
   const ChatScreen({super.key});
 
   @override
-  State<StatefulWidget> createState() {
+  State<ChatScreen> createState() {
     return _ChatScreenState();
   }
 }
 
 class _ChatScreenState extends State<ChatScreen> {
+  void _logout() {
+    FirebaseAuth firebaseAuth = FirebaseAuth.instance;
+    firebaseAuth.signOut();
+  }
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(title: Text("Flutter Chat")),
+      appBar: AppBar(
+        title: Text("Flutter Chat"),
+        actions: [
+          IconButton(
+            onPressed: _logout,
+            icon: Icon(
+              Icons.exit_to_app,
+              color: Theme.of(context).colorScheme.primary,
+            ),
+          ),
+        ],
+      ),
       body: Center(child: Text("Logged in!")),
     );
   }

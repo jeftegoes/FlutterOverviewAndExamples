@@ -427,7 +427,6 @@ https://themobilecoder.com/axis-alignment-columns-rows-flutter/
 # 2. Advanced Fundamentals
 
 
-
 # 3. Navigation & Multi-Screen Apps
 
 - Allowing Users To Navigate Between Screens
@@ -568,5 +567,6 @@ TODO: DIAGRAM
 3. Initialize Firebase in your app.
    1. Enable Developer Mode in your system settings. Run `start ms-settings:developers`.
    2. `flutter pub add firebase_core`.
-   2. `flutter pub add firebase_auth`.
-   3. start ms-settings:developers.
+   3. `flutter pub add firebase_auth`.
+   4. `flutter pub add firebase_storage`.
+   5. start ms-settings:developers.
